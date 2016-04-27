@@ -27,5 +27,13 @@ public class CalculadoraTest {
 		/*Assert*/
 		assertThat(resultado,is(6));
 	}
-	
+	@Test
+	public void DocientosMenosSetentaytresEsCientoVeinteysiete(){
+		/*Arrange*/		
+		Calculadora calculo = new Calculadora();
+		/*Act*/
+		int resultado= calculo.restar(200,73);
+		/*Assert*/
+		assertThat(resultado,is(127));
+	}
 }
