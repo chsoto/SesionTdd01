@@ -2,9 +2,8 @@ package cl.ubb.seccionTDD01;
 
 public class Calculadora {
 
-	public int sumar(int i, int j) {
-		// TODO Auto-generated method stub
-		return 5;
+	public int sumar(int numero1, int numero2) {
+		return(numero1+numero2);
 	}
 
 }

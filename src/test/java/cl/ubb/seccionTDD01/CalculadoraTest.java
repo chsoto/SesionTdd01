@@ -14,7 +14,7 @@ public class CalculadoraTest {
 		/*Arrange*/		
 		Calculadora calculo = new Calculadora();
 		/*Act*/
-		int resultado= calculo.sumar(2,2);
+		int resultado= calculo.sumar(2,3);
 		/*Assert*/
 		assertThat(resultado,is(5));
 	}
@@ -27,5 +27,5 @@ public class CalculadoraTest {
 		/*Assert*/
 		assertThat(resultado,is(6));
 	}
-
+	
 }
