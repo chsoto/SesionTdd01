@@ -37,6 +37,15 @@ public class CalculadoraTest {
 		assertThat(resultado,is(127));
 	}
 	@Test
+	public void MenosDiezMenosCincoEsMenosQuince(){
+		/*Arrange*/		
+		Calculadora calculo = new Calculadora();
+		/*Act*/
+		int resultado= calculo.restar(-10,5);
+		/*Assert*/
+		assertThat(resultado,is(-15));
+	}
+	@Test
 	public void DoceDivididoTresEsCuatro(){
 		/*Arrange*/		
 		Calculadora calculo = new Calculadora();
@@ -46,12 +55,12 @@ public class CalculadoraTest {
 		assertThat(resultado,is(4));
 	}
 	@Test
-	public void MenosDiezMenosCincoEsMenosQuince(){
+	public void TreintayseisDivididoseisEsSeis(){
 		/*Arrange*/		
 		Calculadora calculo = new Calculadora();
 		/*Act*/
-		int resultado= calculo.restar(-10,5);
+		int resultado= calculo.division(36,6);
 		/*Assert*/
-		assertThat(resultado,is(-15));
+		assertThat(resultado,is(6));
 	}
 }
