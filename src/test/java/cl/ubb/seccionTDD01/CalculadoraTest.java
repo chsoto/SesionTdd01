@@ -18,5 +18,14 @@ public class CalculadoraTest {
 		/*Assert*/
 		assertThat(resultado,is(5));
 	}
+	@Test
+	public void MenosUnoMasSieteEsSeis(){
+		/*Arrange*/		
+		Calculadora calculo = new Calculadora();
+		/*Act*/
+		int resultado= calculo.sumar(-1,7);
+		/*Assert*/
+		assertThat(resultado,is(6));
+	}
 
 }
